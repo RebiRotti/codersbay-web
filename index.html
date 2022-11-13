@@ -26,6 +26,7 @@
 		</nav>
 
 		<div class="content">
+			<!-- Semantisch nicht ganz korrekt. nach einer h1 muss eine h2 folgen bevor eine h3 kommen kann. Eine Seite startet immer mit einer h1 -->
 			<h4 text->Willkommen im</h4>
 			<h1>Linzer <span>Zoo</span></h1>
 			<h3 class="heroNote">Hier gibts Tierischen Spaß!</h3>			
@@ -46,12 +47,15 @@
 	</section>
 
 	<!-----UNSERE SERVICES START----------->
+	<!-- article statt div -->
 	<div class="service" id="service-anchor">
+			<!-- ist die div notwenig? -->
 		<div class="title">
 			<h2>Unser Service</h2>
 		</div>
-
 		<div class="box">
+			
+	<!--  section statt div -->
 			<div class="card">
 				<i class="fas fa-bars"></i>
 				<h5>Tierzucht</h5>
@@ -91,7 +95,9 @@
 	</div>
 
 	<!------Kontaktiere mich!------>
-	<div class="contact-me" id="contact-anchor"">
+	
+	<!--  article statt div -->
+	<div class="contact-me" id="contact-anchor">
 		<p>Du möchtest dich mit uns in verbindung setzen?</p>				
         <input type="text" name="firstName" id="firstName" placeholder="Vorname" required>
         <input type="text" name="lastName" id="lastName" placeholder="Nachname" required>
@@ -105,6 +111,8 @@
 	<footer>
 		<p>Linzer Zoo</p>
 		<p>Für Fotos und unser Social-Media Kanäle</p>
+					      
+	<!--  section statt div -->
 		<div class="social">
 			<a href="#"><i class="fab fa-facebook-f"></i></a>
 			<a href="#"><i class="fab fa-instagram"></i></a>
