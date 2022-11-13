@@ -89,12 +89,14 @@ h4{
 }
 .about img{
 	height: auto;
+	/* besser wär max-width: 430px; width: 100%; */
 	width: 430px;
 }
 .about-text{
 	width: 550px;
 }
 .main{
+	/* besser wäre: max-width: 1130px und width: 100% */
 	width: 1130px;
 	max-width: 95%;
 	margin: 0 auto;
@@ -157,6 +159,7 @@ button:hover{
 	min-height: 400px;
 }
 .card{
+	/* width ist hier eher suboptimal, wenn es ein Flex Item ist arbeite mit der Anweisung: Flex für grow, shrink und basis Angaben */
 	height: 365px;
 	width: 335px;
 	padding: 20px 35px;
@@ -281,4 +284,7 @@ footer p:nth-child(2){
 	bottom: 35px;
 	font-size: 14px; 
 }
-
+/* für Mobile Ansicht */
+main, nav, .social, .box {
+	flex-wrap: wrap;
+}
